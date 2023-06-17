@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer_page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="employer.js"></script>
+    <link rel="stylesheet" href="employer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h1 id="skillsEntry"> Enter Skills </h1>
+            <input type="text" id="inputValue">
+            <button onclick="addToList()">Add</button>
+            <ul id="skillList"></ul>
+            <input id="fileInput" type="file" accept="application/pdf">
+            <button onclick="handleFileSelect()">Submit</button> 
+        </div>
+        <div class="right-side" id="resultContainer">
+            <h1 id="waitingMessage">Waiting on input</h1>
+            <div class="spinner" id="loadingSpinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+                <div class="rect6"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
